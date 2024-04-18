@@ -1,0 +1,36 @@
+.CompanyOffers {
+	margin-top: 100px;
+
+	.Content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.CompanyTitle {
+			.Title {
+				color: #662DAC;
+				font-size: 13pt;
+				font-weight: 400;
+				margin: 10px 0;
+			}
+		}
+
+		.Title {
+			.TitleH3 {
+				font-size: 25pt;
+				margin: 10px;
+				font-weight: 700;
+				color: rgb(23, 23, 23);
+			}
+		}
+
+		.Info {
+			font-size: 13pt;
+			color: rgb(58, 58, 58);
+			max-width: 770px;
+			text-align: center;
+			line-height: 1.3;
+			margin-bottom: 100px;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.CardSolution {
+	.Content {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		
+		max-width: 1200px;
+		justify-content: center;
+
+		.Card {
+			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+			transition: 300ms;
+			margin: 10px;
+			max-width: 330px;
+
+			.CardBody {
+				padding: 30px;
+				backdrop-filter: 1;
+
+				.Icon {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 70px;
+					height: 70px;
+					background-color: #662D91;
+					border-radius: 100%;
+					transition: 300ms;
+				}
+	
+				.CardTitle {
+					margin: 20px 0;
+					font-size: 17pt;
+					padding-bottom: 40px;
+					border-bottom: 1px solid white;
+				}
+	
+				.CardInfo {
+					max-width: 270px;
+					line-height: 1.5;
+				}
+			}
+
+			&:hover {
+				color: white;
+				box-shadow: 0 -10px 0 #662D91;
+
+				.CardBody {
+					.Icon {
+						background-color: rgba(255, 255, 255, 0.3);
+					}
+				}
+			}
+		}
+	}
+}

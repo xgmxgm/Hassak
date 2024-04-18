@@ -1,0 +1,48 @@
+.FixedNavigation {
+	position: fixed;
+	top: 10px;
+	width: 80%;
+	padding: 35px 0;
+	background: white;
+	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	display: flex;
+	animation: opacity 300ms 1;
+	z-index: 1;
+	
+	.Li {
+		.Link {
+			text-decoration: none;
+			color: black;
+			margin: 0 40px;
+		}
+	}
+}
+
+@keyframes opacity {
+	0% {
+		transform: translateY(-200%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.FixedNavigationAbsotule {
+	position: absolute;
+	top: 135px;
+	width: 80%;
+	padding: 35px 0;
+	background: white;
+	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	display: flex;
+	
+	.Li {
+		.Link {
+			text-decoration: none;
+			color: black;
+			margin: 0 40px;
+		}
+	}
+}

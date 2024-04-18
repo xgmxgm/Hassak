@@ -1,0 +1,63 @@
+.DesktopHeader {
+	background-color: #030F27;
+	display: flex;
+	justify-content: center;
+
+	.Content {
+		width: 80%;
+	}
+
+	.DesktopHeaderUp {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border-bottom: 1px solid #394664;
+
+		.Navigation {
+			display: flex;
+			padding: 15px 0;
+
+			.Link {
+				color: #8a99c0;
+				text-decoration: none;
+				margin: 0px 20px;
+				transition: 200ms;
+
+				&:hover {
+					color: #5236a7;
+					text-shadow: 0 0 10px #462D91;
+				}
+			}
+		}
+
+		.Contacts {
+			display: flex;
+
+			.Li {
+				margin: 0 15px;
+				padding-left: 20px;
+				color:#8a99c0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-left: 1px solid #394664;
+				gap: 5px;
+			}
+		}
+	}
+
+	.DesktopHeaderCenter {
+		padding: 20px 0;
+
+		.Logo {
+			margin-bottom: 40px;
+			cursor: pointer;
+		}
+	}
+
+	.DesktopHeaderDown {
+		display: flex;
+		justify-content: center;
+	}
+}
