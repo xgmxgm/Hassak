@@ -12,8 +12,6 @@ export const FixedNavigation = () => {
 		};
 
 		window.addEventListener('scroll', handleScroll);
-
-		console.log(scrollPosition)
 	});
 
 	return (

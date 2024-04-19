@@ -1,0 +1,33 @@
+.Achievements {
+	background-image: url(../../../../public/bgAchievements.jpg);
+	background-repeat: no-repeat;
+
+	.Content {
+		padding: 10px;
+
+		.Text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: white;
+
+			.Numbs {
+				color: #A8CACA;
+				margin-top: 80px;
+			}
+
+			.Title {
+				margin: 20px;
+				font-size: 25pt;
+			}
+		}
+
+		.Cards {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 50px;
+		}
+	}
+}

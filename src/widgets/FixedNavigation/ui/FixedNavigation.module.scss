@@ -11,10 +11,16 @@
 	z-index: 1;
 	
 	.Li {
+		transition: 200ms;
+
 		.Link {
 			text-decoration: none;
 			color: black;
 			margin: 0 40px;
+		}
+
+		&:hover {
+			text-shadow: 0 0 10px #462D91;
 		}
 	}
 }
@@ -39,10 +45,16 @@
 	display: flex;
 	
 	.Li {
+		transition: 200ms;
+
 		.Link {
 			text-decoration: none;
 			color: black;
 			margin: 0 40px;
+		}
+
+		&:hover {
+			text-shadow: 0 0 10px #462D91;
 		}
 	}
 }

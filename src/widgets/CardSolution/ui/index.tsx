@@ -15,7 +15,8 @@ export const CardSolution = () => {
 					{
 						CartsData.map((CartData, index) => <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} key={index} className={styles.Card}>
 						{/* // CartsData.map((CartData, index) => <div onMouseEnter={() => CartData.isHover = true} onMouseLeave={() => CartData.isHover = false} key={index} className={styles.Card}> */}
-							<div className={styles.BackgroundImg} style={{background: Hover ? "url(startap.jpg)" : "#fff"}}>
+							{/* <div className={styles.BackgroundImg} style={{background: Hover ? "url(startap.jpg)" : "#fff"}}> */}
+							<div className={styles.BackgroundImg}>
 								<div className={styles.CardBody}>
 									<div className={styles.Icon}>
 										<Image src={CartData.icon} alt='icon' width={40}height={40} />

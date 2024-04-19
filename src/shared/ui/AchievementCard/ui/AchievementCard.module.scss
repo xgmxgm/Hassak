@@ -1,0 +1,32 @@
+.AchievementCard {
+	background: rgba(255, 255, 255, 0.2);
+	width: 200px;
+	border-radius: 10px;
+	margin: 10px;
+
+	.Content {
+		display: flex;
+		flex-direction: column;
+		padding: 30px 20px;
+
+		.Up {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+
+			.Title {
+				margin-bottom: 20px;
+				font-size: 15pt;
+				font-weight: 400;
+			}
+		}
+
+		.Down {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			color: #37D984;
+		}
+	}
+}
