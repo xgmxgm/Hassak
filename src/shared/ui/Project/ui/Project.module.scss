@@ -1,0 +1,57 @@
+.Project {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.Content {
+		width: 80%;
+
+		.Projects {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+			flex-wrap: wrap;
+
+			.Project {
+				width: 480px;
+				height: 330px;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				background-size: cover;
+				background-repeat: no-repeat;
+				filter: brightness(0.8);
+				margin: 15px;
+
+				&:hover {
+					.Text {
+						transform: translateY(-60px);
+					}
+				}
+
+				.Text {
+					width: 90%;
+					display: flex;
+					flex-direction: column;
+					transition: 200ms;
+
+					.Title {
+						color: white;
+						font-weight: 400;
+						margin-bottom: 10px;
+						font-size: 19pt;
+					}
+	
+					.Line {
+						width: 100%;
+						height: 2px;
+						background: #6B7071;
+						margin-bottom: 5px;
+					}
+				}
+
+			}
+		}
+	}
+}

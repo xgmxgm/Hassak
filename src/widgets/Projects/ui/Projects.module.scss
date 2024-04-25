@@ -1,0 +1,25 @@
+.Projects {
+	margin-top: 200px;
+
+	.Content {
+		.Up {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+
+			.Text {
+				text-align: center;
+				color: #6B2D91;
+				max-width: 75%;
+				font-weight: 500;
+			}
+
+			.Title {
+				margin-top: 20px;
+				font-size: 26pt;
+				color: rgb(19, 19, 19);
+			}
+		}
+	}
+}

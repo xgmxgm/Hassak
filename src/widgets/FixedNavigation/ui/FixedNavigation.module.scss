@@ -7,8 +7,8 @@
 	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	display: flex;
-	animation: opacity 300ms 1;
-	z-index: 1;
+	animation: translate 300ms 1;
+	z-index: 10;
 	
 	.Li {
 		transition: 200ms;
@@ -21,11 +21,12 @@
 
 		&:hover {
 			text-shadow: 0 0 10px #462D91;
+			color: #5236a7;
 		}
 	}
 }
 
-@keyframes opacity {
+@keyframes translate {
 	0% {
 		transform: translateY(-200%);
 	}
@@ -43,6 +44,7 @@
 	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	display: flex;
+	animation: translateState 200ms 1;
 	
 	.Li {
 		transition: 200ms;
@@ -55,6 +57,16 @@
 
 		&:hover {
 			text-shadow: 0 0 10px #462D91;
+			color: #5236a7;
 		}
+	}
+}
+
+@keyframes translateState {
+	0% {
+		transform: translateY(200%);
+	}
+	100% {
+		transform: translateY(0%);
 	}
 }
