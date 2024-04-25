@@ -1,13 +1,32 @@
-import Image from 'next/image'
+'use client'
+
 import styles from './Footer.module.scss'
+import { motion } from 'framer-motion'
 import { Links } from '../Data'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const Footer = () => {
+	const pVariants = {
+        hidden: {
+            x: -100,
+            opacity: 0,
+        },
+        visible: {
+            x: 0,
+            opacity: 1
+        }
+    }
+
 	return (
 		<>
 			<div className={styles.Footer}>
-				<div className={styles.Content}>
+				<motion.div
+				className={styles.Content}
+				initial = "hidden"
+				whileInView = "visible"
+				variants = {pVariants}
+				>
 					<div className={styles.Up}>
 						<div className={styles.Left}>
 							<Image className={styles.Logo} src="/hassak-logo-sait.png" alt='' width={270} height={80} />
@@ -41,7 +60,7 @@ export const Footer = () => {
 					<div className={styles.Down}>
 						<p className={styles.Text}>© HASSAK ENGINEERING</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</>
 	)

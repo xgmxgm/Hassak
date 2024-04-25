@@ -1,14 +1,31 @@
 import { Links, Contacts } from "@/widgets/Header/Data"
 import { FixedNavigation } from '@/widgets/FixedNavigation'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import styles from './DesktopHeader.module.scss'
 
 export const DesktopHeader = () => {
+	const pVariants = {
+        hidden: {
+            x: -100,
+            opacity: 0,
+        },
+        visible: {
+            x: 0,
+            opacity: 1
+        }
+    }
+
 	return (
 		<>
-			<div className={styles.DesktopHeader}>
+			<motion.div
+			className = {styles.DesktopHeader}
+			initial = "hidden"
+			animate = "visible"
+			variants = {pVariants}
+			>
 				<div className={styles.Content}>
 					<div className={styles.DesktopHeaderUp}>
 						<div className={styles.Navigation}>
@@ -35,7 +52,7 @@ export const DesktopHeader = () => {
 						<FixedNavigation />
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	)
 }

@@ -1,7 +1,32 @@
+'use client'
+
 import Image from 'next/image'
 import styles from './NetworksAndSystems.module.scss'
+import { motion } from 'framer-motion'
 
 export const NetworksAndSystems = () => {
+	const pVariants = {
+        hidden: {
+			x: -100,
+            opacity: 0,
+        },
+        visible: {
+			x: 0,
+            opacity: 1
+        }
+    }
+
+	const pVariants2 = {
+        hidden: {
+			x: 100,
+            opacity: 0,
+        },
+        visible: {
+			x: 0,
+            opacity: 1
+        }
+    }
+
 	return (
 		<>
 			<div className={styles.NetworksAndSystems}>
@@ -16,12 +41,22 @@ export const NetworksAndSystems = () => {
 							<p className={styles.Info}>Проектирование инженерных систем и сетей — сложный и трудоемкий процесс, требующий от исполнителя максимальной концентрации, точности и внимания. В процессе проектирования систем водоснабжения, канализации, отопления, вентиляции и кондиционирования решаются задачи как инженерного, так и технического характера.</p>
 						</div>
 						<div className={styles.Right}>
-							<div className={styles.layer1}>
+							<motion.div
+							className={styles.layer1}
+							initial = "hidden"
+							whileInView = "visible"
+							variants={pVariants}
+							>
 								<Image className={styles.Img1} src="/image-15.jpg" alt='img' width={350} height={525} />
-							</div>
-							<div className={styles.layer2}>
+							</motion.div>
+							<motion.div
+							className={styles.layer2}
+							initial = "hidden"
+							whileInView = "visible"
+							variants={pVariants2}
+							>
 								<Image className={styles.Img2} src="/cross.jpg" alt='img' width={350} height={525} />
-							</div>
+							</motion.div>
 						</div>
 					</div>
 				</div>
