@@ -8,12 +8,12 @@ export const Header = () => {
     const [widthScreen, setWidthScreen] = useState<number>(0)
 
     useEffect(() => {
-        setWidthScreen(typeof window !== 'undefined' && window.innerWidth || 0)
-    }, [])
+        setWidthScreen(typeof window !== 'undefined' && window.screen.width || 0)
+    })
 
     return (
         <>
-        { widthScreen >= 740 ? <DesktopHeader /> : <MobileHeader /> }
+        { widthScreen >= 1050 ? <DesktopHeader /> : <MobileHeader /> }
         </>
     )
 }

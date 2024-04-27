@@ -8,6 +8,9 @@
 	border-radius: 5px;
 	display: flex;
 	animation: translate 300ms 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	z-index: 10;
 	
 	.Li {
@@ -38,6 +41,7 @@
 .FixedNavigationAbsotule {
 	position: absolute;
 	top: 135px;
+	// top: 10%;
 	width: 80%;
 	padding: 35px 0;
 	background: white;
@@ -45,6 +49,9 @@
 	border-radius: 5px;
 	display: flex;
 	animation: translateState 200ms 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	
 	.Li {
 		transition: 200ms;
@@ -68,5 +75,17 @@
 	}
 	100% {
 		transform: translateY(0%);
+	}
+}
+
+@media (max-width: 1300px) {
+	.FixedNavigation, .FixedNavigationAbsotule  {
+		font-size: 13px;
+
+		.Li {
+			.Link {
+				margin: 0 20px;
+			}
+		}
 	}
 }

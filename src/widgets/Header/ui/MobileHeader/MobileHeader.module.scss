@@ -1,0 +1,146 @@
+.MobileHeader {
+	background-color: #030F27;
+	padding: 20px;
+
+	.Content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.Logo {
+			
+		}
+
+		.BurgerMenuIcon {
+			cursor: pointer;
+			z-index: 100;
+
+			.Line {
+				background: white;
+				width: 25px;
+				height: 1px;
+				border-radius: 50px;
+				margin: 7px;
+			}
+		}
+
+		.BurgerMenu {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 110vh;
+			background-color: #030F27;
+			z-index: 99;
+			animation: open 1s 1;
+
+			.Content {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				.Links {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 80px;
+
+					.Link {
+						text-decoration: none;
+						color: white;
+						margin: 10px 0;
+					}
+				}
+
+				.Contacts {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+
+					.Contact {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin: 10px 0;
+						color: white;
+						gap: 10px;
+					}
+				}
+			}
+		}
+
+		.BurgerMenuClosed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 110vh;
+			background-color: #030F27;
+			z-index: 99;
+			animation: close 1s 1;
+			transform: translateX(-100%);
+
+			.Content {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				.Links {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 80px;
+
+					.Link {
+						text-decoration: none;
+						color: white;
+						margin: 10px 0;
+					}
+				}
+				
+				.Contacts {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+
+					.Contact {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: white;
+						margin: 10px 0;
+						gap: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes open {
+	0% {
+		transform: translate(-100%);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+@keyframes close {
+	0% {
+		transform: translate(0);
+	}
+
+	100% {
+		transform: translate(-100%);
+	}
+}
