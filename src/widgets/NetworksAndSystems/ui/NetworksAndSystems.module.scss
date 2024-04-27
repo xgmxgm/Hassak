@@ -70,3 +70,20 @@
 		}
 	}
 }
+
+@media (max-width: 1100px) {
+	.NetworksAndSystems {
+		text-align: center;
+
+		.Content {
+			.Down {
+				flex-direction: column;
+				gap: 100px;
+
+				.Right {
+					transform: translateX(-70px);
+				}
+			}
+		}
+	}
+}

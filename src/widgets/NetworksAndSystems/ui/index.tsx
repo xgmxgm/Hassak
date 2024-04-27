@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import styles from './NetworksAndSystems.module.scss'
 import { motion } from 'framer-motion'
+import img_1 from "@/../public/image-15.jpg"
+import img_2 from "@/../public/cross.jpg"
 
 export const NetworksAndSystems = () => {
 	const pVariants = {
@@ -47,7 +49,8 @@ export const NetworksAndSystems = () => {
 							whileInView = "visible"
 							variants={pVariants}
 							>
-								<Image className={styles.Img1} src="/image-15.jpg" alt='img' width={350} height={525} />
+								{/* <Image className={styles.Img1} src="/image-15.jpg" alt='img' width={350} height={525} /> */}
+								<Image className={styles.Img1} src={img_1} alt='img' style={{width: '100%', height: 'auto', minWidth: "250px"}} />
 							</motion.div>
 							<motion.div
 							className={styles.layer2}
@@ -55,7 +58,8 @@ export const NetworksAndSystems = () => {
 							whileInView = "visible"
 							variants={pVariants2}
 							>
-								<Image className={styles.Img2} src="/cross.jpg" alt='img' width={350} height={525} />
+								{/* <Image className={styles.Img2} src="/cross.jpg" alt='img' width={350} height={525} /> */}
+								<Image className={styles.Img2} src={img_2} alt='img' style={{width: '100%', height: 'auto', minWidth: "250px"}}/>
 							</motion.div>
 						</div>
 					</div>

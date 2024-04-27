@@ -25,7 +25,8 @@ export const Sponsors = () => {
 			>
 				<div className={styles.Content}>
 					{
-						Logos.map((Logo, index) => <Image key={index} src={Logo.img} alt='Logo' width={260} height={95} className={styles.Logo}/>)
+						// Logos.map((Logo, index) => <Image key={index} src={Logo.img} alt='Logo' width={260} height={95} className={styles.Logo}/>)
+						Logos.map((Logo, index) => <Image key={index} className={styles.Logo} src={Logo.img} alt='Logo' style={{width: "260px", height: "auto"}}/>)
 					}
 				</div>
 			</motion.div>

@@ -3,7 +3,6 @@
 		display: flex;
 		align-items: flex-start;
 		flex-wrap: wrap;
-		
 		max-width: 1200px;
 		justify-content: center;
 
@@ -43,6 +42,22 @@
 
 			&:hover {
 				box-shadow: 0 -10px 0 #662D91;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.CardSolution {
+		.Content {
+			.Card {
+				max-width: 230px;
+
+				.CardBody {
+					.CardTitle {
+						font-size: 12pt;
+					}
+				}
 			}
 		}
 	}

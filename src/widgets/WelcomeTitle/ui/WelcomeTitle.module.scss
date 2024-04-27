@@ -29,3 +29,61 @@
 		}
 	}
 }
+
+@media (max-width: 1010px) {
+	.WelcomeTitle {
+		height: 500px;
+
+		.Content {
+			.CompanyTitle {
+				.Title {
+					font-size: 45pt;
+				}
+			}
+
+			.CompanyInfo {
+				font-size: 16pt;
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.WelcomeTitle {
+		height: 350px;
+
+		.Content {
+			margin-top: 40px;
+
+			.CompanyTitle {
+				.Title {
+					font-size: 35pt;
+				}
+			}
+
+			.CompanyInfo {
+				font-size: 13pt;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.WelcomeTitle {
+		height: 250px;
+
+		.Content {
+			margin-top: 20px;
+
+			.CompanyTitle {
+				.Title {
+					font-size: 25pt;
+				}
+			}
+
+			.CompanyInfo {
+				font-size: 11pt;
+			}
+		}
+	}
+}

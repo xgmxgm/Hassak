@@ -30,3 +30,21 @@
 		}
 	}
 }
+
+@media (max-width: 1055px) {
+	.AchievementCard {
+		width: 300px;
+		margin: 5px;
+
+		.Content {
+			padding: 15px 10px;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.AchievementCard {
+		width: 200px;
+		height: 150px;
+	}
+}

@@ -61,3 +61,13 @@
 		justify-content: center;
 	}
 }
+
+@media (max-width: 1465px) {
+	.DesktopHeader {
+		.Content {
+			.DesktopHeaderUp {
+				flex-direction: column;
+			}
+		}
+	}
+}

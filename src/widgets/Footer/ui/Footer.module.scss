@@ -100,3 +100,31 @@
 		}
 	}
 }
+
+@media (max-width: 1420px) {
+	.Footer {
+		.Content {
+			.Up {
+				.Center {
+					.Link {
+						font-size: 11pt;
+						max-width: 30%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.Footer {
+		.Content {
+			.Up {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+		}
+	}
+}

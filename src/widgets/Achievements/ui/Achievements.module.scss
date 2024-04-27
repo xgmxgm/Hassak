@@ -1,6 +1,7 @@
 .Achievements {
 	background-image: url(../../../../public/bgAchievements.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 
 	.Content {
 		padding: 10px;
@@ -29,6 +30,40 @@
 			justify-content: center;
 			gap: 50px;
 			margin-bottom: 80px;
+		}
+	}
+}
+
+@media (max-width: 1055px) {
+	.Achievements {
+		.Content {
+			.Text {
+				.Numbs {
+					margin-top: 60px;
+				}
+			}
+
+			.Cards {
+				flex-wrap: wrap;
+				gap: 0px;
+			}
+		}
+	}
+}
+
+@media (max-width: 455px) {
+	.Achievements {
+		.Content {
+			.Text {
+				.Numbs {
+					margin-top: 10px;
+				}
+
+				.Title {
+					font-size: 20pt;
+					margin: 10px;
+				}
+			}
 		}
 	}
 }

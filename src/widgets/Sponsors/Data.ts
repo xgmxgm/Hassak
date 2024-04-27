@@ -1,18 +1,39 @@
+import { StaticImageData } from 'next/image'
+import Jhonson from "@/../public/jhonson.png"
+import Honeywell from "@/../public/Honeywell.png"
+import Triadium from "@/../public/logo-triadium.jpg"
+import Siemens from "@/../public/logo-siemens.jpg"
+
 interface ILogo {
-	img: string,
+	img: StaticImageData,
 }
+
+// export const Logos: ILogo[] = [
+// 	{
+// 		img: "/jhonson.png",
+// 	},
+// 	{
+// 		img: "/Honeywell.png",
+// 	},
+// 	{
+// 		img: "/logo-triadium.jpg",
+// 	},
+// 	{
+// 		img: "/logo-siemens.jpg",
+// 	},
+// ]
 
 export const Logos: ILogo[] = [
 	{
-		img: "/jhonson.png",
+		img: Jhonson,
 	},
 	{
-		img: "/Honeywell.png",
+		img: Honeywell,
 	},
 	{
-		img: "/logo-triadium.jpg",
+		img: Triadium,
 	},
 	{
-		img: "/logo-siemens.jpg",
+		img: Siemens,
 	},
 ]
