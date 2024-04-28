@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './MobileHeader.module.scss'
 import { useState } from 'react'
-import { Contacts, Links } from '../../Data'
+import { Contacts, Links, Navs } from '../../Data'
 import Link from 'next/link'
 
 export const MobileHeader = () => {
@@ -21,6 +21,11 @@ export const MobileHeader = () => {
 					</div>
 					<div className={isOpenBurgerMenu ? styles.BurgerMenu : styles.BurgerMenuClosed}>
 						<div className={styles.Content}>
+							<div className={styles.Navs}>
+								{
+									Navs.map((Nav, index) => <Link key={index} className={styles.Nav} href={Nav.href}>{Nav.link}</Link>)
+								}
+							</div>
 							<div className={styles.Links}>
 								{
 									Links.map((link, index) => <Link className={styles.Link} key={index} href={link.href}>{link.link}</Link>)

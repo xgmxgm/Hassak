@@ -7,10 +7,6 @@
 		align-items: center;
 		justify-content: space-between;
 
-		.Logo {
-			
-		}
-
 		.BurgerMenuIcon {
 			cursor: pointer;
 			z-index: 100;
@@ -41,6 +37,20 @@
 				align-items: center;
 				justify-content: center;
 
+				.Navs {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-items: center;
+					margin-bottom: 20px;
+
+					.Nav {
+						text-decoration: none;
+						color: white;
+						margin: 5px 0;
+					}
+				}
+
 				.Links {
 					display: flex;
 					flex-direction: column;
@@ -50,8 +60,8 @@
 
 					.Link {
 						text-decoration: none;
-						color: white;
-						margin: 10px 0;
+						color: #52368F;
+						margin: 5px 0;
 					}
 				}
 
@@ -91,6 +101,20 @@
 				align-items: center;
 				justify-content: center;
 
+				.Navs {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-items: center;
+					margin-bottom: 20px;
+
+					.Nav {
+						text-decoration: none;
+						color: white;
+						margin: 5px 0;
+					}
+				}
+
 				.Links {
 					display: flex;
 					flex-direction: column;
@@ -100,8 +124,8 @@
 
 					.Link {
 						text-decoration: none;
-						color: white;
-						margin: 10px 0;
+						color: #52368F;
+						margin: 5px 0;
 					}
 				}
 				
