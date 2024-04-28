@@ -1,25 +1,45 @@
+"use client"
+
 import { CardSolution } from '@/widgets/CardSolution'
+import { motion } from 'framer-motion'
 import styles from './CompanyOffers.module.scss'
 
-export const CompanyOffers = () => {
+export const CompanyOffers = () => {	
+	const pVariants = {
+        hidden: {
+            x: -100,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            x: 0,
+            opacity: 1,
+			transition: { delay: custom * 0.3 }
+        })
+    }
+
 	return (
 		<>
-			<div className={styles.CompanyOffers}>
+			<motion.div
+				className={styles.CompanyOffers}
+				initial='hidden'
+				whileInView='visible'
+				viewport={{ amount: 0.1, once: true }}
+			>
 				<div className={styles.Content}>
 					<div className={styles.CompanyTitle}>
-						<h3 className={styles.Title}>ТОО HASSAK ENGINEERING</h3>
+						<motion.h3 variants={pVariants} custom={1} className={styles.Title}>ТОО HASSAK ENGINEERING</motion.h3>
 					</div>
 					<div className={styles.Title}>
-						<h3 className={styles.TitleH3}>Наша компания предлагает комплексные инженерные решения</h3>
+						<motion.h3 variants={pVariants} custom={2} className={styles.TitleH3}>Наша компания предлагает комплексные инженерные решения</motion.h3>
 					</div>
 					<div className={styles.Info}>
-						<p className={styles.InfoP}>которые сопровождаются с высококвалифицированными техническими специалистами, имеющие опыт работы более 10 лет</p>
+						<motion.p variants={pVariants} custom={3} className={styles.InfoP}>которые сопровождаются с высококвалифицированными техническими специалистами, имеющие опыт работы более 10 лет</motion.p>
 					</div>
 					<div className={styles.CardSolution}>
 						<CardSolution />
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	)
 }

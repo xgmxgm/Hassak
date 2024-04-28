@@ -1,14 +1,32 @@
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { CartsData } from '../Data'
 import styles from './CardSolution.module.scss'
 
 export const CardSolution = () => {
+	const pVariants = {
+        hidden: {
+            x: -100,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            x: 0,
+            opacity: 1,
+			transition: { delay: custom * 0.3 }
+        })
+    }
+
 	return (
 		<>
-			<div className={styles.CardSolution}>
+			<motion.div
+				className={styles.CardSolution}
+				initial='hidden'
+				whileInView='visible'
+				viewport={{ once: true, amount: 0.1 }}
+			>
 				<div className={styles.Content}>
 					{
-						CartsData.map((CartData, index) => <div key={index} className={styles.Card}>
+						CartsData.map((CartData, index) => <motion.div variants={pVariants} custom={index} key={index} className={styles.Card} style={{overflow: "hidden"}}>
 							<div className={styles.BackgroundImg}>
 								<div className={styles.CardBody}>
 									<div className={styles.Icon}>
@@ -22,10 +40,10 @@ export const CardSolution = () => {
 									</div>
 								</div>
 							</div>
-						</div>)
+						</motion.div>)
 					}
 				</div>
-			</div>
+			</motion.div>
 		</>
 	)
 }

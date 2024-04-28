@@ -41,6 +41,10 @@
 						font-weight: 400;
 						margin-bottom: 10px;
 						font-size: 19pt;
+
+						@media (max-width: 500px) {
+							font-size: 13pt;
+						}
 					}
 	
 					.Line {

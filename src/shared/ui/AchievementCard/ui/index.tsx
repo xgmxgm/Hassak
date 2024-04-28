@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 import styles from './AchievementCard.module.scss'
+import { motion } from 'framer-motion'
+import { forwardRef } from 'react'
 
 interface IProps {
 	title: string,
@@ -9,10 +11,10 @@ interface IProps {
 	Achievement: string
 }
 
-export const AchievementCard = ({ title, icon, Achievement }: IProps) => {
+export const AchievementCard = forwardRef<HTMLDivElement, IProps>(({ title, icon, Achievement }: IProps, ref) => {
 	return (
 		<>
-			<div className={styles.AchievementCard}>
+			<div className={styles.AchievementCard} ref={ref} style={{overflow: "hidden"}}>
 				<div className={styles.Content}>
 					<div className={styles.Up}>
 						<h2 className={styles.Title}>{title}</h2>
@@ -25,4 +27,6 @@ export const AchievementCard = ({ title, icon, Achievement }: IProps) => {
 			</div>
 		</>
 	)
-}
+})
+
+export const MAchievementCard = motion(AchievementCard);
