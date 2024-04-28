@@ -25,13 +25,18 @@ export const NetworksAndSystems = () => {
         },
         visible: {
 			x: 0,
-            opacity: 1
-        }
+            opacity: 1,
+        },
     }
 
 	return (
 		<>
-			<div className={styles.NetworksAndSystems}>
+			<motion.div
+				className={styles.NetworksAndSystems}
+				initial = "hidden"
+				whileInView = "visible"
+				viewport={{amount: 0.4, once: true}}
+			>
 				<div className={styles.Content}>
 					<div className={styles.Up}>
 						<p className={styles.Title}>НАША КОМПАНИЯ ПРЕДЛАГАЕТ КОМПЛЕКСНЫЕ ИНЖЕНЕРНЫЕ РЕШЕНИЯ</p>
@@ -42,29 +47,26 @@ export const NetworksAndSystems = () => {
 							<h2 className={styles.Title}>Проектирование инженерных сетей и систем является одним из важных этапов при возведении и реконструкции объектов.</h2>
 							<p className={styles.Info}>Проектирование инженерных систем и сетей — сложный и трудоемкий процесс, требующий от исполнителя максимальной концентрации, точности и внимания. В процессе проектирования систем водоснабжения, канализации, отопления, вентиляции и кондиционирования решаются задачи как инженерного, так и технического характера.</p>
 						</div>
-						<div className={styles.Right}>
+						<div
+							className={styles.Right}
+							style={{overflow: "hidden"}}
+						>
 							<motion.div
-							className={styles.layer1}
-							initial = "hidden"
-							whileInView = "visible"
-							variants={pVariants}
+								className={styles.layer1}
+								variants={pVariants}
 							>
-								{/* <Image className={styles.Img1} src="/image-15.jpg" alt='img' width={350} height={525} /> */}
 								<Image className={styles.Img1} src={img_1} alt='img' style={{width: '100%', height: 'auto', minWidth: "250px"}} />
 							</motion.div>
 							<motion.div
-							className={styles.layer2}
-							initial = "hidden"
-							whileInView = "visible"
-							variants={pVariants2}
+								className={styles.layer2}
+								variants={pVariants2}
 							>
-								{/* <Image className={styles.Img2} src="/cross.jpg" alt='img' width={350} height={525} /> */}
 								<Image className={styles.Img2} src={img_2} alt='img' style={{width: '100%', height: 'auto', minWidth: "250px"}}/>
 							</motion.div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	)
 }
