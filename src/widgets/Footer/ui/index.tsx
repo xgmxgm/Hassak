@@ -26,6 +26,8 @@ export const Footer = () => {
 				initial = "hidden"
 				whileInView = "visible"
 				variants = {pVariants}
+				viewport={{amount: 0.2, once: true}}
+				style={{overflow: 'hidden'}}
 				>
 					<div className={styles.Up}>
 						<div className={styles.Left}>
