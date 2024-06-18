@@ -27,7 +27,7 @@ export const CompanyOffers = () => {
 			>
 				<div className={styles.Content}>
 					<div className={styles.CompanyTitle}>
-						<motion.h3 variants={pVariants} custom={1} className={styles.Title}>ТОО HASSAK ENGINEERING</motion.h3>
+						<motion.h3 variants={pVariants} custom={1} className={styles.Title}>TEO BUILDING</motion.h3>
 					</div>
 					<div className={styles.Title}>
 						<motion.h3 variants={pVariants} custom={2} className={styles.TitleH3}>Наша компания предлагает комплексные инженерные решения</motion.h3>

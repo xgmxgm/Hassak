@@ -45,7 +45,7 @@ export const DesktopHeader = () => {
 					</div>
 					<div className={styles.DesktopHeaderCenter}>
 						<div className={styles.Logo}>
-							<Image src="/hassak-logo-sait.png" alt='logo' width={140} height={45} />
+							<Image className={styles.LogoImg} src="/teo-logo-sait.jpeg" alt='logo' width={80} height={80} />
 						</div>
 					</div>
 					<div className={styles.DesktopHeaderDown}>

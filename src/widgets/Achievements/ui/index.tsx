@@ -28,13 +28,13 @@ export const Achievements = () => {
 				<div className={styles.Content}>
 					<div className={styles.Text}>
 						<p className={styles.Numbs}>ЦИФРЫ</p>
-						<h2 className={styles.Title}>ТОО Hassak Engineering</h2>
+						<h2 className={styles.Title}>TEO BUILDING</h2>
 					</div>
 					<div className={styles.Cards}>
-						<MAchievementCard variants={pVariants} custom={1} title='Инженеров' icon='engineer.svg' Achievement='20+'  />
+						<MAchievementCard variants={pVariants} custom={1} title='Инженеров' icon='engineer.svg' Achievement='10+'  />
 						<MAchievementCard variants={pVariants} custom={2} title='Реализованные Проекты' icon='ruler.svg' Achievement='100+'  />
-						<MAchievementCard variants={pVariants} custom={3} title='Клиенты' icon='users.svg' Achievement='500+'  />
-						<MAchievementCard variants={pVariants} custom={4} title='Опыт Работы' icon='wheelbarrow.svg' Achievement='15лет'  />
+						<MAchievementCard variants={pVariants} custom={3} title='Клиенты' icon='users.svg' Achievement='200+'  />
+						<MAchievementCard variants={pVariants} custom={4} title='Опыт Работы' icon='wheelbarrow.svg' Achievement='15 лет'  />
 					</div>
 				</div>
 			</motion.div>

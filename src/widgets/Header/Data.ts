@@ -58,14 +58,14 @@ export const Links: ILinks[] = [
 export const Contacts: IContacts[] = [
 	{
 		icon: "/phone.svg",
-		title: "+7 701 880 04 58"
+		title: "+7 707 558 66 40"
 	},
 	{
 		icon: "/mail.svg",
-		title: "info@hassak.kz "
+		title: "Teo@gmail.com"
 	},
 	{
 		icon: "/location.svg",
-		title: "Алматы, Алматы Тауэрс, 18 этаж, офис 18"
+		title: "г.Алматы., мкр. Жетысу-1, дом-50, оф-5"
 	}
 ]

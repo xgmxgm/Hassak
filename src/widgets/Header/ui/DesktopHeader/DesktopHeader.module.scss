@@ -1,5 +1,5 @@
 .DesktopHeader {
-	background-color: #030F27;
+	background-color: #181C24;
 	display: flex;
 	justify-content: center;
 
@@ -52,7 +52,10 @@
 
 		.Logo {
 			margin-bottom: 40px;
-			cursor: pointer;
+			
+			.LogoImg {
+				border-radius: 5px;
+			}
 		}
 	}
 

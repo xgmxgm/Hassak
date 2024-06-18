@@ -12,7 +12,7 @@ export const MobileHeader = () => {
 			<div className={styles.MobileHeader}>
 				<div className={styles.Content}>
 					<div className={styles.Logo}>
-						<Image src="/hassak-logo-sait.png" alt='logo' width={140} height={40} />
+						<Image className={styles.LogoImg} src="/teo-logo-sait.jpeg" alt='logo' width={50} height={50} />
 					</div>
 					<div className={styles.BurgerMenuIcon} onClick={() => setIsOpenBurgerMenu(!isOpenBurgerMenu)}>
 						<div className={styles.Line}></div>

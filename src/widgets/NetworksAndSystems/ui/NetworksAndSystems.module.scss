@@ -16,7 +16,7 @@
 			text-align: center;
 
 			.Title {
-				color: #6B2D91;
+				color: #F6A429;
 			}
 
 			.Info {
@@ -24,6 +24,7 @@
 				font-size: 17pt;
 				max-width: 900px;
 				line-height: 1.5;
+				color: #DBDBDB;
 			}
 		}
 
@@ -39,12 +40,13 @@
 				.Title {
 					margin-bottom: 50px;
 					font-size: 21pt;
+					color: #DBDBDB;
 				}
 
 				.Info {
 					font-size: 14pt;
 					font-weight: 700;
-					color: #7d7d7d;
+					color: #a9a9a9;
 				}
 			}
 
@@ -62,10 +64,9 @@
 				.layer2 {
 					.Img2 {
 						border-radius: 10px;
-						transform: translateY(-50px);
+						transform: translateY(0px);
 					}
 				}
-
 			}
 		}
 	}

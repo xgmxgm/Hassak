@@ -1,11 +1,17 @@
 .MobileHeader {
-	background-color: #030F27;
+	background-color: #181C24;
 	padding: 20px;
 
 	.Content {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		.Logo {
+			.LogoImg {
+				border-radius: 5px;
+			}
+		}
 
 		.BurgerMenuIcon {
 			cursor: pointer;
@@ -26,7 +32,7 @@
 			left: 0;
 			width: 100vw;
 			height: 110vh;
-			background-color: #030F27;
+			background-color: #181C24;
 			z-index: 99;
 			animation: open 1s 1;
 
@@ -60,7 +66,7 @@
 
 					.Link {
 						text-decoration: none;
-						color: #52368F;
+						color: #F6A429;
 						margin: 5px 0;
 					}
 				}
@@ -89,7 +95,7 @@
 			left: 0;
 			width: 100vw;
 			height: 110vh;
-			background-color: #030F27;
+			background-color: #181C24;
 			z-index: 99;
 			animation: close 1s 1;
 			transform: translateX(-100%);
@@ -124,7 +130,7 @@
 
 					.Link {
 						text-decoration: none;
-						color: #52368F;
+						color: #F6A429;
 						margin: 5px 0;
 					}
 				}

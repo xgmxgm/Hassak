@@ -31,7 +31,7 @@ export const Footer = () => {
 				>
 					<div className={styles.Up}>
 						<div className={styles.Left}>
-							<Image className={styles.Logo} src="/hassak-logo-sait.png" alt='' width={270} height={80} />
+							<Image className={styles.Logo} src="/teo-logo-sait.jpeg" alt='' width={90} height={90} />
 							<p className={styles.Text}>Мы гарантируем высокую компетентность наших инженеров, выполнение контракта в соответствии с нормы ISO 9001, и более гибкое сотрудничество с сотрудниками, ответственными за Ваш проект.</p>
 						</div>
 						<div className={styles.Center}>
@@ -46,21 +46,21 @@ export const Footer = () => {
 							<div className={styles.Contacts}>
 								<div className={styles.Phone}>
 									<Image src="/phone.svg" alt='icon' width={20} height={20} />
-									<p>+7 701 880 04 58</p>
+									<p>+7 707 558 66 40</p>
 								</div>
 								<div className={styles.Geo}>
 									<Image src="/location.svg" alt='icon' width={20} height={20} />
-									<p>Алматы, ул. Байзакова 280, Алматы Тауэрс, Северная башня, 18 этаж, офис 18</p>
+									<p>г.Алматы., мкр. Жетысу-1, дом-50, оф-5</p>
 								</div>
 								<div className={styles.Mail}>
 									<Image src="/mail.svg" alt='icon' width={20} height={20} />
-									<p>info@hassak.kz</p>
+									<p>Teo@gmail.com</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div className={styles.Down}>
-						<p className={styles.Text}>© HASSAK ENGINEERING</p>
+						<p className={styles.Text}>© TEO BUILDING</p>
 					</div>
 				</motion.div>
 			</div>
