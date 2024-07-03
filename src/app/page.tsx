@@ -1,10 +1,10 @@
-import { NetworksAndSystems } from '@/widgets/NetworksAndSystems'
+// import { NetworksAndSystems } from '@/widgets/NetworksAndSystems'
 import { CompanyOffers } from '@/widgets/CompanyOffers'
 import { WelcomeTitle } from '@/widgets/WelcomeTitle'
 import { Achievements } from '@/widgets/Achievements'
 import styles from "./page.module.css";
 import { Projects } from '@/widgets/Projects'
-import { Sponsors } from '@/widgets/Sponsors'
+// import { Sponsors } from '@/widgets/Sponsors'
 
 export default function Home() {
   return (
@@ -14,9 +14,9 @@ export default function Home() {
           <WelcomeTitle />
           <CompanyOffers />
           <Achievements />
-          <NetworksAndSystems />
+          {/* <NetworksAndSystems /> */}
           <Projects />
-          <Sponsors />
+          {/* <Sponsors /> */}
         </div>
       </div>
     </>

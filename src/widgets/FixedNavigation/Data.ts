@@ -6,26 +6,14 @@ interface ILinks {
 export const Links: ILinks[] = [
 	{
 		link: "О Нас",
-		href: "/about"
-	},
-	{
-		link: "Системы диспетчеризации (BMS)",
-		href: "/bms"
-	},
-	{
-		link: "Лифты и Эскалаторы",
-		href: "/elevatorsandescalators"
-	},
-	{
-		link: "Проектирование",
-		href: "/design"
+		href: "/"
 	},
 	{
 		link: "Услуги",
 		href: "/services"
 	},
 	{
-		link: "Проекты",
-		href: "/projects"
-	}
+		link: "Сертификаты",
+		href: "/certificates"
+	},
 ]

@@ -1,8 +1,3 @@
-interface ILinks {
-	link: string,
-	href: string
-}
-
 interface IContacts {
 	icon: string,
 	title: string
@@ -16,38 +11,11 @@ interface INav {
 export const Navs: INav[] = [
 	{
 		link: "О Нас",
-		href: "/about"
-	},
-	{
-		link: "Системы диспетчеризации (BMS)",
-		href: "/bms"
-	},
-	{
-		link: "Лифты и Эскалаторы",
-		href: "/elevatorsandescalators"
-	},
-	{
-		link: "Проектирование",
-		href: "/design"
+		href: "/"
 	},
 	{
 		link: "Услуги",
 		href: "/services"
-	},
-	{
-		link: "Проекты",
-		href: "/projects"
-	}
-]
-
-export const Links: ILinks[] = [
-	{
-		link: "Контакты",
-		href: "/contacts"
-	},
-	{
-		link: "Отзывы",
-		href: "/reviews"
 	},
 	{
 		link: "Сертификаты",

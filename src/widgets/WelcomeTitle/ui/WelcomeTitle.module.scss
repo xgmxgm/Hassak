@@ -20,12 +20,13 @@
 			.Title {
 				font-size: 65pt;
 				font-weight: 600;
+				overflow: hidden;
+				border-right: .15em solid transparent;
+				white-space: nowrap;
+				margin: 0 auto;
+				letter-spacing: .15em;
+				animation: typing 3s steps(30, end), blink-caret 1s step-end 4;
 			}
-		}
-
-		.CompanyInfo {
-			font-size: 22pt;
-			line-height: 1.7;
 		}
 	}
 }
@@ -39,10 +40,6 @@
 				.Title {
 					font-size: 45pt;
 				}
-			}
-
-			.CompanyInfo {
-				font-size: 16pt;
 			}
 		}
 	}
@@ -60,10 +57,6 @@
 					font-size: 35pt;
 				}
 			}
-
-			.CompanyInfo {
-				font-size: 13pt;
-			}
 		}
 	}
 }
@@ -80,10 +73,24 @@
 					font-size: 25pt;
 				}
 			}
-
-			.CompanyInfo {
-				font-size: 11pt;
-			}
 		}
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink-caret {
+	from, to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: orange;
 	}
 }

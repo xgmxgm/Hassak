@@ -26,14 +26,14 @@ export const CompanyOffers = () => {
 				viewport={{ amount: 0.1, once: true }}
 			>
 				<div className={styles.Content}>
-					<div className={styles.CompanyTitle}>
+					{/* <div className={styles.CompanyTitle}>
 						<motion.h3 variants={pVariants} custom={1} className={styles.Title}>TEO BUILDING</motion.h3>
-					</div>
+					</div> */}
 					<div className={styles.Title}>
 						<motion.h3 variants={pVariants} custom={2} className={styles.TitleH3}>Наша компания предлагает комплексные инженерные решения</motion.h3>
 					</div>
 					<div className={styles.Info}>
-						<motion.p variants={pVariants} custom={3} className={styles.InfoP}>которые сопровождаются с высококвалифицированными техническими специалистами, имеющие опыт работы более 10 лет</motion.p>
+						<motion.p variants={pVariants} custom={3} className={styles.InfoP}>которые сопровождаются высококвалифицированными техническими специалистами, имеющие опыт работы более 15 лет</motion.p>
 					</div>
 					<div className={styles.CardSolution}>
 						<CardSolution />

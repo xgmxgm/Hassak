@@ -14,25 +14,26 @@
 		justify-content: space-around;
 		border-bottom: 1px solid #394664;
 
-		.Navigation {
-			display: flex;
-			padding: 15px 0;
+		// .Navigation {
+		// 	display: flex;
+		// 	padding: 15px 0;
 
-			.Link {
-				color: #8a99c0;
-				text-decoration: none;
-				margin: 0px 20px;
-				transition: 200ms;
+		// 	.Link {
+		// 		color: #8a99c0;
+		// 		text-decoration: none;
+		// 		margin: 0px 20px;
+		// 		transition: 200ms;
 
-				&:hover {
-					color: #5236a7;
-					text-shadow: 0 0 10px #462D91;
-				}
-			}
-		}
+		// 		&:hover {
+		// 			color: #5236a7;
+		// 			text-shadow: 0 0 10px #462D91;
+		// 		}
+		// 	}
+		// }
 
 		.Contacts {
 			display: flex;
+			padding: 15px 0;
 
 			.Li {
 				margin: 0 15px;

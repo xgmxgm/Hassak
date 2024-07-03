@@ -1,0 +1,23 @@
+.Certificates {
+	margin-top: 70px;
+
+	.Content {
+		text-align: center;
+		color: #fff;
+
+		.Title {
+			.TitleText {
+				font-size: 25pt;
+			}
+		}
+
+		.CertificatesBlock {
+			padding: 50px 20px;
+			overflow: hidden;
+
+			.Img {
+				padding-bottom: 20px;
+			}
+		}
+	}
+}

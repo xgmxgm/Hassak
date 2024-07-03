@@ -1,6 +1,6 @@
+import styles from './Project.module.scss'
 import { motion } from "framer-motion"
 import { Projects } from '../Data'
-import styles from './Project.module.scss'
 
 export const Project = () => {
 	const pVariants = {

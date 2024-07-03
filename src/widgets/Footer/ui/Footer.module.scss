@@ -11,7 +11,8 @@
 		.Up {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			// justify-content: space-between;
+			justify-content: space-around;
 			padding: 50px 0;
 
 			.Left {
@@ -30,27 +31,27 @@
 				}
 			}
 	
-			.Center {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				height: 200px;
+			// .Center {
+			// 	display: flex;
+			// 	flex-direction: column;
+			// 	justify-content: space-between;
+			// 	flex-wrap: wrap;
+			// 	height: 200px;
 
-				.Link {
-					text-decoration: none;
-					color: #4E5767;
-					font-size: 13pt;
-					transition: 200ms;
-					margin: 10px;
-					width: 275px;
+			// 	.Link {
+			// 		text-decoration: none;
+			// 		color: #4E5767;
+			// 		font-size: 13pt;
+			// 		transition: 200ms;
+			// 		margin: 10px;
+			// 		width: 275px;
 
-					&:hover {
-						color: white;
-						text-decoration: underline;
-					}
-				}
-			}
+			// 		&:hover {
+			// 			color: white;
+			// 			text-decoration: underline;
+			// 		}
+			// 	}
+			// }
 	
 			.Right {
 				width: 260px;
@@ -68,6 +69,10 @@
 						gap: 10px;
 						border-bottom: 1px solid #2F3B50;
 						padding-bottom: 15px;
+
+						.PhoneText {
+							color: #fff;
+						}
 					}
 
 					.Geo {
@@ -106,12 +111,12 @@
 	.Footer {
 		.Content {
 			.Up {
-				.Center {
-					.Link {
-						font-size: 11pt;
-						max-width: 30%;
-					}
-				}
+				// .Center {
+				// 	.Link {
+				// 		font-size: 11pt;
+				// 		max-width: 30%;
+				// 	}
+				// }
 			}
 		}
 	}

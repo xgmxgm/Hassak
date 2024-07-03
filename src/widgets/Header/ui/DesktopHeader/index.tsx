@@ -1,8 +1,7 @@
-import { Links, Contacts } from "@/widgets/Header/Data"
 import { FixedNavigation } from '@/widgets/FixedNavigation'
+import { Contacts } from "@/widgets/Header/Data"
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import styles from './DesktopHeader.module.scss'
 
@@ -28,13 +27,6 @@ export const DesktopHeader = () => {
 			>
 				<div className={styles.Content}>
 					<div className={styles.DesktopHeaderUp}>
-						<div className={styles.Navigation}>
-							{
-								Links.map((link, index) => <ul key={index} style={{listStyle: "none"}}>
-									<li><Link className={styles.Link} href={link.href}>{link.link}</Link></li>
-								</ul>)
-							}
-						</div>
 						<div className={styles.Contacts}>
 							{
 								Contacts.map((contact, index) => <ul key={index} style={{listStyle: "none"}}>

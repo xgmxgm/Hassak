@@ -29,7 +29,7 @@ export const Projects = () => {
 				<div className={styles.Content}>
 					<div className={styles.Up}>
 						<motion.p variants={pVariants} custom={1} className={styles.Text} style={{overflow: "hidden"}}>ВЫПОЛНИТЬ ПРОЕКТ ДЛЯ СТРОИТЕЛЬСТВА АРХИТЕКТУРНОГО СООРУЖЕНИЯ - ЭТО НЕЧТО БОЛЬШЕЕ, ЧЕМ ПРОСТО ПРИДУМАТЬ ЕГО ДИЗАЙН И ВНЕШНИЙ ОБЛИК.</motion.p>
-						<motion.h2 className={styles.Title} variants={pVariants} custom={2} style={{overflow: "hidden"}}>Проекты</motion.h2>
+						<motion.h2 className={styles.Title} variants={pVariants} custom={2} style={{overflow: "hidden"}}>Наши работы</motion.h2>
 					</div>
 					<div className={styles.Down} style={{overflow: "hidden"}}>
 						<Project />

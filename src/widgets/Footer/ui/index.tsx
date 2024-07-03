@@ -2,9 +2,9 @@
 
 import styles from './Footer.module.scss'
 import { motion } from 'framer-motion'
-import { Links } from '../Data'
+// import { Links } from '../Data'
 import Image from 'next/image'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 export const Footer = () => {
 	const pVariants = {
@@ -34,11 +34,11 @@ export const Footer = () => {
 							<Image className={styles.Logo} src="/teo-logo-sait.jpeg" alt='' width={90} height={90} />
 							<p className={styles.Text}>Мы гарантируем высокую компетентность наших инженеров, выполнение контракта в соответствии с нормы ISO 9001, и более гибкое сотрудничество с сотрудниками, ответственными за Ваш проект.</p>
 						</div>
-						<div className={styles.Center}>
+						{/* <div className={styles.Center}>
 							{
 								Links.map((link, index) => <Link className={styles.Link} key={index} href={link.href}>{link.text}</Link>)
 							}
-						</div>
+						</div> */}
 						<div className={styles.Right}>
 							<div className={styles.Title}>
 								<h3 className={styles.Info}>Info</h3>
@@ -46,7 +46,7 @@ export const Footer = () => {
 							<div className={styles.Contacts}>
 								<div className={styles.Phone}>
 									<Image src="/phone.svg" alt='icon' width={20} height={20} />
-									<p>+7 707 558 66 40</p>
+									<p className={styles.PhoneText}>+7 707 558 66 40</p>
 								</div>
 								<div className={styles.Geo}>
 									<Image src="/location.svg" alt='icon' width={20} height={20} />

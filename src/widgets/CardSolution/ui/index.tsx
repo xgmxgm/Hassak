@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import styles from './CardSolution.module.scss'
 import { motion } from 'framer-motion'
 import { CartsData } from '../Data'
-import styles from './CardSolution.module.scss'
+import Image from 'next/image'
 
 export const CardSolution = () => {
 	const pVariants = {
