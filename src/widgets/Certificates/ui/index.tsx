@@ -32,7 +32,7 @@ export const Certificates = () => {
 					</div>
 					<div className={styles.CertificatesBlock}>
 						{
-							Images.map((img, index) => <motion.div key={index} variants={pVariants} custom={index}><Image className={styles.Img} src={img.href} alt='Certificate'  width={550} height={800} style={{maxWidth: '100%', height: 'auto'}} priority/></motion.div>)
+							Images.map((img, index) => <motion.div key={index} variants={pVariants} custom={index}><Image className={styles.Img} src={img.href} alt='Certificate'  width={550} height={800} style={{maxWidth: '100%', height: 'auto'}} priority={true}/></motion.div>)
 						}
 					</div>
 				</div>

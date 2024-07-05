@@ -5,19 +5,19 @@ interface IProject {
 
 export const Projects: IProject[] = [
 	{
-		img: "/ShymkentPlaza.jpg",
-		title: "Shymkent Plaza",
+		img: "/PhotosForGallery/Photo_7.jpg",
+		title: "Black Star Burger г.Алматы",
 	},
 	{
-		img: "/ShymkentPlaza.jpg",
-		title: "Halyk Bank (AFD) Алматы",
+		img: "/PhotosForGallery/Photo_6.jpg",
+		title: "Акимат г.Алматы",
 	},
-	{
-		img: "/ShymkentPlaza.jpg",
-		title: "Haileybury School Алматы",
-	},
-	{
-		img: "/ShymkentPlaza.jpg",
-		title: "Haileybury Astana",
-	},
+	// {
+	// 	img: "/ShymkentPlaza.jpg",
+	// 	title: "Haileybury School г.Алматы",
+	// },
+	// {
+	// 	img: "/ShymkentPlaza.jpg",
+	// 	title: "Haileybury г.Astana",
+	// },
 ];

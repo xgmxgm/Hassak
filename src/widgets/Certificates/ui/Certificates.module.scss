@@ -16,7 +16,15 @@
 			overflow: hidden;
 
 			.Img {
-				padding-bottom: 20px;
+				margin-bottom: 20px;
+				border-radius: 5px;
+				box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.5);
+				transition: 350ms;
+
+				&:hover {
+					transform: scale(1.1);
+					box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5);
+				}
 			}
 		}
 	}
