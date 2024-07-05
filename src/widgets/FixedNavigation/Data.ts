@@ -13,6 +13,10 @@ export const Links: ILinks[] = [
 		href: "/services"
 	},
 	{
+		link: "Фото галерея",
+		href: "/photo-galleries"
+	},
+	{
 		link: "Сертификаты",
 		href: "/certificates"
 	},

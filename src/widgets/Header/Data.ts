@@ -18,9 +18,13 @@ export const Navs: INav[] = [
 		href: "/services"
 	},
 	{
+		link: "Фото галерея",
+		href: "/photo-galleries"
+	},
+	{
 		link: "Сертификаты",
 		href: "/certificates"
-	}
+	},
 ]
 
 export const Contacts: IContacts[] = [
