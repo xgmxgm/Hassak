@@ -16,21 +16,12 @@
 			overflow: hidden;
 
 			.Img {
-				margin: 20px;
+				margin-bottom: 20px;
 				border-radius: 10px;
 				box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.5);
 				transition: 350ms;
-			}
 
-			@media (hover: hover) {
-				Img:hover {
-					transform: scale(1.1);
-					box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5);
-				}
-			}
-
-			@media (hover: none) {
-				Img:active {
+				&:hover {
 					transform: scale(1.1);
 					box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5);
 				}
