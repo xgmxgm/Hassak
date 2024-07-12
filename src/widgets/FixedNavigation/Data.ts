@@ -1,23 +1,19 @@
 interface ILinks {
-	link: string,
+	link: string
 	href: string
 }
 
 export const Links: ILinks[] = [
 	{
-		link: "О Нас",
-		href: "/"
+		link: 'DesktopHeader.FixedNavigation.aboutUs',
+		href: '/',
 	},
 	{
-		link: "Услуги",
-		href: "/services"
+		link: 'DesktopHeader.FixedNavigation.photoGallery',
+		href: '/photo-galleries',
 	},
 	{
-		link: "Фото галерея",
-		href: "/photo-galleries"
-	},
-	{
-		link: "Сертификаты",
-		href: "/certificates"
+		link: 'DesktopHeader.FixedNavigation.Certificates',
+		href: '/certificates',
 	},
 ]

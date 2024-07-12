@@ -1,23 +1,31 @@
 interface IProject {
-	img: string,
+	img: string
 	title: string
 }
 
 export const Projects: IProject[] = [
 	{
-		img: "/PhotosForGallery/Photo_7.jpg",
-		title: "Black Star Burger г.Алматы",
+		img: '/Works/BlackStarWork.jpg',
+		title: 'Black Star Burger г.Алматы',
 	},
 	{
-		img: "/PhotosForGallery/Photo_6.jpg",
-		title: "Акимат г.Алматы",
+		img: '/Works/AkimatWork.jpg',
+		title: 'Акимат г.Алматы',
 	},
-	// {
-	// 	img: "/ShymkentPlaza.jpg",
-	// 	title: "Haileybury School г.Алматы",
-	// },
-	// {
-	// 	img: "/ShymkentPlaza.jpg",
-	// 	title: "Haileybury г.Astana",
-	// },
-];
+	{
+		img: '/Works/JerAnaWork.jpg',
+		title: 'ЖК Жер-Ана',
+	},
+	{
+		img: '/Works/MegaWork.jpeg',
+		title: 'ТРЦ Mega Alma-Ata',
+	},
+	{
+		img: '/Works/Pull&BearWork.jpg',
+		title: 'PULL&BEAR',
+	},
+	{
+		img: '/Works/TOPHOPWork.jpg',
+		title: 'TOP HOP',
+	},
+]

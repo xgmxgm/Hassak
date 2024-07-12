@@ -1,7 +1,6 @@
 .FixedNavigation {
 	position: fixed;
 	top: 10px;
-	// width: 80%;
 	padding: 35px 0;
 	background-color: #dbdbdb;
 	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -12,7 +11,7 @@
 	align-items: center;
 	justify-content: center;
 	z-index: 10;
-	
+
 	.Li {
 		transition: 200ms;
 
@@ -23,7 +22,7 @@
 		}
 
 		&:hover {
-			text-shadow: 0 0 10px #462D91;
+			text-shadow: 0 0 10px #462d91;
 			color: #5236a7;
 		}
 	}
@@ -41,7 +40,6 @@
 .FixedNavigationAbsotule {
 	position: absolute;
 	top: 165px;
-	// width: 80%;
 	padding: 35px 0;
 	background-color: #dbdbdb;
 	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -51,7 +49,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
+
 	.Li {
 		transition: 200ms;
 
@@ -62,7 +60,7 @@
 		}
 
 		&:hover {
-			text-shadow: 0 0 10px #462D91;
+			text-shadow: 0 0 10px #462d91;
 			color: #5236a7;
 		}
 	}
@@ -78,7 +76,8 @@
 }
 
 @media (max-width: 1300px) {
-	.FixedNavigation, .FixedNavigationAbsotule  {
+	.FixedNavigation,
+	.FixedNavigationAbsotule {
 		font-size: 13px;
 
 		.Li {

@@ -1,5 +1,5 @@
 .MobileHeader {
-	background-color: #181C24;
+	background-color: #181c24;
 	padding: 20px;
 
 	.Content {
@@ -32,7 +32,7 @@
 			left: 0;
 			width: 100vw;
 			height: 110vh;
-			background-color: #181C24;
+			background-color: #181c24;
 			z-index: 99;
 			animation: open 1s 1;
 
@@ -56,20 +56,6 @@
 						margin: 5px 0;
 					}
 				}
-
-				// .Links {
-				// 	display: flex;
-				// 	flex-direction: column;
-				// 	align-items: center;
-				// 	justify-content: center;
-				// 	margin-bottom: 80px;
-
-				// 	.Link {
-				// 		text-decoration: none;
-				// 		color: #F6A429;
-				// 		margin: 5px 0;
-				// 	}
-				// }
 
 				.Contacts {
 					display: flex;
@@ -99,7 +85,7 @@
 			left: 0;
 			width: 100vw;
 			height: 110vh;
-			background-color: #181C24;
+			background-color: #181c24;
 			z-index: 99;
 			animation: close 1s 1;
 			transform: translateX(-100%);
@@ -125,20 +111,6 @@
 					}
 				}
 
-				// .Links {
-				// 	display: flex;
-				// 	flex-direction: column;
-				// 	align-items: center;
-				// 	justify-content: center;
-				// 	margin-bottom: 80px;
-
-				// 	.Link {
-				// 		text-decoration: none;
-				// 		color: #F6A429;
-				// 		margin: 5px 0;
-				// 	}
-				// }
-				
 				.Contacts {
 					display: flex;
 					flex-direction: column;

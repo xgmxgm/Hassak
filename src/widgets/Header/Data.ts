@@ -1,43 +1,39 @@
 interface IContacts {
-	icon: string,
-	title: string
+	icon: string
+	key: string
 }
 
 interface INav {
-	link: string,
+	link: string
 	href: string
 }
 
 export const Navs: INav[] = [
 	{
-		link: "О Нас",
-		href: "/"
+		link: 'О Нас',
+		href: '/',
 	},
 	{
-		link: "Услуги",
-		href: "/services"
+		link: 'Фото галерея',
+		href: '/photo-galleries',
 	},
 	{
-		link: "Фото галерея",
-		href: "/photo-galleries"
-	},
-	{
-		link: "Сертификаты",
-		href: "/certificates"
+		link: 'Сертификаты',
+		href: '/certificates',
 	},
 ]
 
 export const Contacts: IContacts[] = [
 	{
-		icon: "/phone.svg",
-		title: "+7 707 558 66 40"
+		icon: '/phone.svg',
+		key: 'DesktopHeader.Contacts.phone',
 	},
 	{
-		icon: "/mail.svg",
-		title: "Teo@gmail.com"
+		icon: '/mail.svg',
+		key: 'DesktopHeader.Contacts.mail',
 	},
 	{
-		icon: "/location.svg",
-		title: "г.Алматы., мкр. Жетысу-1, дом-50, оф-5"
-	}
+		icon: '/location.svg',
+		key: 'DesktopHeader.Contacts.place',
+	},
 ]

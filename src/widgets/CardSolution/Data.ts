@@ -1,48 +1,40 @@
+'use client'
+
 interface ICard {
-	icon: string,
-	title: string,
-	info: string,
+	icon: string
+	key: string
+	info: string
 }
 
 export let CartsData: ICard[] = [
 	{
-		icon: "monitor.svg",
-		title: "Архитектурные решения",
-		info: "Архитектурные решения охватывают широкий спектр аспектов проектирования и строительства зданий и сооружений.",
+		icon: 'monitor.svg',
+		key: 'CompanyOffers.cardSolution.architecturalSolutions.title',
+		info: 'CompanyOffers.cardSolution.architecturalSolutions.info',
 	},
 	{
-		icon: "heating.svg",
-		// title: "Системы отопления",
-		title: "Системы отопления, вентиляции и кондиционирования",
-		// info: "Системы отопления, вентиляции и кондиционирования воздуха играют критически важную роль в создании комфортных и здоровых условий в жилых, коммерческих и промышленных зданиях.",
-		info: "Данные системы играют важную роль в создании комфортных условий и напрямую связаны со с здоровьем человека находящегося, как жилом доме, офисе, в помещениях производственного назначения.",
+		icon: 'heating.svg',
+		key: 'CompanyOffers.cardSolution.heatingVentilationAndAirConditioningSystems.title',
+		info: 'CompanyOffers.cardSolution.heatingVentilationAndAirConditioningSystems.info',
 	},
 	{
-		icon: "pipe.svg",
-		// title: "Внутренние водопровод",
-		title: "Водоснабжение и водоотведение",
-		// info: "Внутренние водопровод и канализация являются важными инженерными системами, обеспечивающими подачу чистой воды и удаление сточных вод в зданиях.",
-		info: "Данные системы отвечают за подачу чистой питьевой воды, а так же за водоотведение сточных и дождевых вод.",
+		icon: 'pipe.svg',
+		key: 'CompanyOffers.cardSolution.waterSupplyAndSanitation.title',
+		info: 'CompanyOffers.cardSolution.waterSupplyAndSanitation.info',
 	},
 	{
-		icon: "energy.svg",
-		// title: "Освещение",
-		title: "Электрооборудование и осветительные приборы",
-		// info: "Электрооборудование и освещение играют важную роль в обеспечении комфортной и безопасной среды в жилых, коммерческих и промышленных зданиях.",
-		info: "Данные системы отвечают за распределение электрического тока от бытовых электрических приборов до производственных агрегатов, так же распределение осветительных приборов, для создания комфортных условий в жилых домах, офисных помещениях, зданиях промышленного назначения и т.д.",
+		icon: 'energy.svg',
+		key: 'CompanyOffers.cardSolution.electricalEquipmentAndLighting.title',
+		info: 'CompanyOffers.cardSolution.electricalEquipmentAndLighting.info',
 	},
 	{
-		icon: "message.svg",
-		// title: "Системы связи",
-		title: "Cлаботочные системы",
-		// info: "Системы связи в современных зданиях обеспечивают передачу данных, голоса и видео, создавая удобную и функциональную информационную инфраструктуру.",
-		info: "Данные системы включают в себя особо важные разделы такие как, видеонаблюдение, система охраны, системы «умный дом», системы противопожарной сигнализации, системы оповещения и др. Данные системы позволяют осуществлять полный контроль и управление за всеми разделами, такими как водоснабжение и водоотведение, отопление, вентиляция и кондиционирование, электроснабжение и электроосвещение и др.",
+		icon: 'message.svg',
+		key: 'CompanyOffers.cardSolution.lowCurrentSystems.title',
+		info: 'CompanyOffers.cardSolution.lowCurrentSystems.info',
 	},
 	{
-		icon: "lift.svg",
-		// title: "Грузоподъемный механизм",
-		title: "Эксплуатация зданий, сооружений и инженерных коммуникаций.",
-		// info: "Техническое обслуживание и освидетельствование грузоподъемных механизмов согласно всем требованиям ПУБЭЛ",
-		info: "Привальный подход и надлежащий  уход при эксплуатации инженерных коммуникаций, зданий и сооружений, позволит увеличить их срок службы, что позволить  сэкономить время и финансы",
+		icon: 'lift.svg',
+		key: 'CompanyOffers.cardSolution.operationOfBuildingsStructuresAndUtilities.title',
+		info: 'CompanyOffers.cardSolution.operationOfBuildingsStructuresAndUtilities.info',
 	},
 ]
