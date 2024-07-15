@@ -1,10 +1,10 @@
 'use client'
 
-import Image from 'next/image'
-import { Photos } from '../data'
 import styles from './PhotoGalleriesBlock.module.scss'
-import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { motion } from 'framer-motion'
+import { Photos } from '../data'
+import Image from 'next/image'
 
 export const PhotoGalleriesBlock = () => {
 	const t = useTranslations()
@@ -40,10 +40,9 @@ export const PhotoGalleriesBlock = () => {
 									className={styles.Img}
 									src={img.href}
 									alt='Photo'
-									width={550}
-									height={800}
-									style={{ maxWidth: '100%', height: 'auto' }}
-									priority={true}
+									width={500}
+									height={750}
+									style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
 								/>
 							</motion.div>
 						))}

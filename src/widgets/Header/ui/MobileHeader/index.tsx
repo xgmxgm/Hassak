@@ -1,3 +1,4 @@
+import { SelectLocales } from '@/widgets/SelectLocales'
 import styles from './MobileHeader.module.scss'
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
@@ -5,7 +6,6 @@ import { Contacts, Navs } from '../../Data'
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { SelectLocales } from '@/widgets/SelectLocales'
 
 export const MobileHeader = () => {
 	const translation = useTranslations('DesktopHeader.FixedNavigation')
