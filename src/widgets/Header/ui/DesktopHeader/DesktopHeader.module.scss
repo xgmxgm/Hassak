@@ -1,5 +1,5 @@
 .DesktopHeader {
-	background-color: #181C24;
+	background-color: #181c24;
 	display: flex;
 	justify-content: center;
 
@@ -14,23 +14,6 @@
 		justify-content: space-around;
 		border-bottom: 1px solid #394664;
 
-		// .Navigation {
-		// 	display: flex;
-		// 	padding: 15px 0;
-
-		// 	.Link {
-		// 		color: #8a99c0;
-		// 		text-decoration: none;
-		// 		margin: 0px 20px;
-		// 		transition: 200ms;
-
-		// 		&:hover {
-		// 			color: #5236a7;
-		// 			text-shadow: 0 0 10px #462D91;
-		// 		}
-		// 	}
-		// }
-
 		.Contacts {
 			display: flex;
 			padding: 15px 0;
@@ -38,7 +21,7 @@
 			.Li {
 				margin: 0 15px;
 				padding-left: 20px;
-				color:#8a99c0;
+				color: #8a99c0;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -50,10 +33,12 @@
 
 	.DesktopHeaderCenter {
 		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
 
 		.Logo {
 			margin-bottom: 40px;
-			
+
 			.LogoImg {
 				border-radius: 5px;
 			}

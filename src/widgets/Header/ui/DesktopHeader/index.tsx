@@ -1,17 +1,13 @@
 import { FixedNavigation } from '@/widgets/FixedNavigation'
+import { SelectLocales } from '@/widgets/SelectLocales'
+import styles from './DesktopHeader.module.scss'
 import { Contacts } from '@/widgets/Header/Data'
+import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-import styles from './DesktopHeader.module.scss'
-import { useTranslation } from 'react-i18next'
-
 export const DesktopHeader = () => {
-	const { t, i18n } = useTranslation()
-
-	const changeLanguage = (language: string) => {
-		i18n.changeLanguage(language)
-	}
+	const t = useTranslations('DesktopHeader.Contacts')
 
 	const pVariants = {
 		hidden: {
@@ -34,10 +30,6 @@ export const DesktopHeader = () => {
 			>
 				<div className={styles.Content}>
 					<div className={styles.DesktopHeaderUp}>
-						<div>
-							<button onClick={() => changeLanguage('ru')}>Ru</button>
-							<button onClick={() => changeLanguage('kz')}>Kz</button>
-						</div>
 						<div className={styles.Contacts}>
 							{Contacts.map((contact, index) => (
 								<ul key={index} style={{ listStyle: 'none' }}>
@@ -48,7 +40,6 @@ export const DesktopHeader = () => {
 											width={20}
 											height={20}
 										/>
-
 										{t(contact.key)}
 									</li>
 								</ul>
@@ -64,6 +55,9 @@ export const DesktopHeader = () => {
 								width={80}
 								height={80}
 							/>
+						</div>
+						<div>
+							<SelectLocales />
 						</div>
 					</div>
 					<div className={styles.DesktopHeaderDown}>

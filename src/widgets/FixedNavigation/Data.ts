@@ -1,19 +1,19 @@
 interface ILinks {
-	link: string
+	link: any
 	href: string
 }
 
 export const Links: ILinks[] = [
 	{
-		link: 'DesktopHeader.FixedNavigation.aboutUs',
+		link: 'FixedNavigation.aboutUs',
 		href: '/',
 	},
 	{
-		link: 'DesktopHeader.FixedNavigation.photoGallery',
+		link: 'FixedNavigation.photoGallery',
 		href: '/photo-galleries',
 	},
 	{
-		link: 'DesktopHeader.FixedNavigation.Certificates',
+		link: 'FixedNavigation.Certificates',
 		href: '/certificates',
 	},
 ]

@@ -3,8 +3,11 @@
 import { Project } from '@/shared/ui/Project'
 import { motion } from 'framer-motion'
 import styles from './Projects.module.scss'
+import { useTranslations } from 'next-intl'
 
 export const Projects = () => {
+	const t = useTranslations('Projects')
+
 	const pVariants = {
 		hidden: {
 			x: 100,
@@ -34,7 +37,7 @@ export const Projects = () => {
 							custom={2}
 							style={{ overflow: 'hidden' }}
 						>
-							Наши работы
+							{t('title')}
 						</motion.h2>
 					</div>
 					<div className={styles.Down} style={{ overflow: 'hidden' }}>

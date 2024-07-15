@@ -2,12 +2,14 @@ import Link from 'next/link'
 import { Links } from '../Data'
 import styles from './FixedNavigation.module.scss'
 import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
 
 export const FixedNavigation = () => {
 	const [scrollPosition, setScrollPosition] = useState(0)
 
-	const { t } = useTranslation()
+	const t = useTranslations('DesktopHeader')
+	const pathName = usePathname()
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -15,6 +17,10 @@ export const FixedNavigation = () => {
 		}
 
 		window.addEventListener('scroll', handleScroll)
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
 	})
 
 	return (
@@ -29,7 +35,10 @@ export const FixedNavigation = () => {
 				{Links.map((link, index) => (
 					<ul key={index} style={{ listStyle: 'none' }}>
 						<li className={styles.Li}>
-							<Link className={styles.Link} href={link.href}>
+							<Link
+								className={styles.Link}
+								href={`/${pathName.split('/')[1]}${link.href}`}
+							>
 								{t(link.link)}
 							</Link>
 						</li>

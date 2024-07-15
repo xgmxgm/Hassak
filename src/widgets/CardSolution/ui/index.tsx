@@ -1,13 +1,13 @@
 'use client'
 
 import styles from './CardSolution.module.scss'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { CartsData } from '../Data'
 import Image from 'next/image'
 
 export const CardSolution = () => {
-	const { t } = useTranslation()
+	const t = useTranslations('CompanyOffers.cardSolution')
 
 	const pVariants = {
 		hidden: {

@@ -21,10 +21,10 @@
 				font-size: 65pt;
 				font-weight: 600;
 				overflow: hidden;
-				border-right: .1em solid transparent;
+				border-right: 0.1em solid transparent;
 				white-space: nowrap;
 				margin: 0 auto;
-				letter-spacing: .15em;
+				letter-spacing: 0.15em;
 				animation: typing 3s steps(30, end), blink-caret 1s step-end 4;
 			}
 		}
@@ -77,6 +77,22 @@
 	}
 }
 
+@media (max-width: 355px) {
+	.WelcomeTitle {
+		height: 250px;
+
+		.Content {
+			margin-top: 20px;
+
+			.CompanyTitle {
+				.Title {
+					font-size: 20pt;
+				}
+			}
+		}
+	}
+}
+
 @keyframes typing {
 	from {
 		width: 0;
@@ -87,7 +103,8 @@
 }
 
 @keyframes blink-caret {
-	from, to {
+	from,
+	to {
 		border-color: transparent;
 	}
 	50% {

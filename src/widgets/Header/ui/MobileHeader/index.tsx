@@ -1,10 +1,17 @@
-import Image from 'next/image'
 import styles from './MobileHeader.module.scss'
-import { useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { Contacts, Navs } from '../../Data'
+import { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
+import { SelectLocales } from '@/widgets/SelectLocales'
 
 export const MobileHeader = () => {
+	const translation = useTranslations('DesktopHeader.FixedNavigation')
+	const t = useTranslations('DesktopHeader.Contacts')
+	const pathName = usePathname()
+
 	const [isOpenBurgerMenu, setIsOpenBurgerMenu] = useState<boolean>(false)
 
 	return (
@@ -40,10 +47,10 @@ export const MobileHeader = () => {
 									<Link
 										key={index}
 										className={styles.Nav}
-										href={Nav.href}
+										href={`/${pathName.split('/')[1]}${Nav.href}`}
 										onClick={() => setIsOpenBurgerMenu(false)}
 									>
-										{Nav.link}
+										{translation(Nav.link)}
 									</Link>
 								))}
 							</div>
@@ -56,9 +63,12 @@ export const MobileHeader = () => {
 											width={25}
 											height={25}
 										/>
-										<p className={styles.TextContact}>{Contact.title}</p>
+										<p className={styles.TextContact}>{t(Contact.key)}</p>
 									</div>
 								))}
+							</div>
+							<div>
+								<SelectLocales />
 							</div>
 						</div>
 					</div>

@@ -6,11 +6,11 @@ interface IProject {
 export const Projects: IProject[] = [
 	{
 		img: '/Works/BlackStarWork.jpg',
-		title: 'Black Star Burger г.Алматы',
+		title: 'Black Star Burger',
 	},
 	{
 		img: '/Works/AkimatWork.jpg',
-		title: 'Акимат г.Алматы',
+		title: 'Акимат',
 	},
 	{
 		img: '/Works/JerAnaWork.jpg',

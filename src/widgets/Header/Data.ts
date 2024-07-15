@@ -1,24 +1,24 @@
-interface IContacts {
-	icon: string
-	key: string
+interface INav {
+	link: any
+	href: string
 }
 
-interface INav {
-	link: string
-	href: string
+interface IContacts {
+	icon: string
+	key: any
 }
 
 export const Navs: INav[] = [
 	{
-		link: 'О Нас',
+		link: 'aboutUs',
 		href: '/',
 	},
 	{
-		link: 'Фото галерея',
+		link: 'photoGallery',
 		href: '/photo-galleries',
 	},
 	{
-		link: 'Сертификаты',
+		link: 'Certificates',
 		href: '/certificates',
 	},
 ]
@@ -26,14 +26,14 @@ export const Navs: INav[] = [
 export const Contacts: IContacts[] = [
 	{
 		icon: '/phone.svg',
-		key: 'DesktopHeader.Contacts.phone',
+		key: 'phone',
 	},
 	{
 		icon: '/mail.svg',
-		key: 'DesktopHeader.Contacts.mail',
+		key: 'mail',
 	},
 	{
 		icon: '/location.svg',
-		key: 'DesktopHeader.Contacts.place',
+		key: 'place',
 	},
 ]

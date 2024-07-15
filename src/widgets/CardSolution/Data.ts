@@ -2,39 +2,39 @@
 
 interface ICard {
 	icon: string
-	key: string
-	info: string
+	key: any
+	info: any
 }
 
 export let CartsData: ICard[] = [
 	{
 		icon: 'monitor.svg',
-		key: 'CompanyOffers.cardSolution.architecturalSolutions.title',
-		info: 'CompanyOffers.cardSolution.architecturalSolutions.info',
+		key: 'architecturalSolutions.title',
+		info: 'architecturalSolutions.info',
 	},
 	{
 		icon: 'heating.svg',
-		key: 'CompanyOffers.cardSolution.heatingVentilationAndAirConditioningSystems.title',
-		info: 'CompanyOffers.cardSolution.heatingVentilationAndAirConditioningSystems.info',
+		key: 'heatingVentilationAndAirConditioningSystems.title',
+		info: 'heatingVentilationAndAirConditioningSystems.info',
 	},
 	{
 		icon: 'pipe.svg',
-		key: 'CompanyOffers.cardSolution.waterSupplyAndSanitation.title',
-		info: 'CompanyOffers.cardSolution.waterSupplyAndSanitation.info',
+		key: 'waterSupplyAndSanitation.title',
+		info: 'waterSupplyAndSanitation.info',
 	},
 	{
 		icon: 'energy.svg',
-		key: 'CompanyOffers.cardSolution.electricalEquipmentAndLighting.title',
-		info: 'CompanyOffers.cardSolution.electricalEquipmentAndLighting.info',
+		key: 'electricalEquipmentAndLighting.title',
+		info: 'electricalEquipmentAndLighting.info',
 	},
 	{
 		icon: 'message.svg',
-		key: 'CompanyOffers.cardSolution.lowCurrentSystems.title',
-		info: 'CompanyOffers.cardSolution.lowCurrentSystems.info',
+		key: 'lowCurrentSystems.title',
+		info: 'lowCurrentSystems.info',
 	},
 	{
 		icon: 'lift.svg',
-		key: 'CompanyOffers.cardSolution.operationOfBuildingsStructuresAndUtilities.title',
-		info: 'CompanyOffers.cardSolution.operationOfBuildingsStructuresAndUtilities.info',
+		key: 'operationOfBuildingsStructuresAndUtilities.title',
+		info: 'operationOfBuildingsStructuresAndUtilities.info',
 	},
 ]

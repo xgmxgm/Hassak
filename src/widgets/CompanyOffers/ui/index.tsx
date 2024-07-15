@@ -2,11 +2,11 @@
 
 import { CardSolution } from '@/widgets/CardSolution'
 import styles from './CompanyOffers.module.scss'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 
 export const CompanyOffers = () => {
-	const { t } = useTranslation()
+	const t = useTranslations('CompanyOffers')
 
 	const pVariants = {
 		hidden: {
@@ -35,12 +35,12 @@ export const CompanyOffers = () => {
 							custom={2}
 							className={styles.TitleH3}
 						>
-							{t('CompanyOffers.infoSmall')}
+							{t('infoSmall')}
 						</motion.h3>
 					</div>
 					<div className={styles.Info}>
 						<motion.p variants={pVariants} custom={3} className={styles.InfoP}>
-							{t('CompanyOffers.infoBig')}
+							{t('infoBig')}
 						</motion.p>
 					</div>
 					<div className={styles.CardSolution}>
